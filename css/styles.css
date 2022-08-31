@@ -1,0 +1,67 @@
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+#piano{
+    width:62em;
+    background-color: #00471B;
+    margin: 5% auto;
+    padding: 5.625rem 1.25rem 0;
+    position: relative;
+    border-radius: 0.625rem;
+}
+.logo{
+    width: 12.5em;
+    position: absolute;
+    top: 1.4375em;
+}
+#keys{
+    width: 59.3125em;
+    height: 11.25em;
+    background-color: #040404;
+    padding-left: 0.125em;
+    overflow: hidden;
+}
+.key{
+    width: 2.5625em;
+    height: 10.9375em;
+    background-color: #ffffff;
+    border-radius: 0 0 0.1875em 0.1875em;
+    margin: 0.125em;
+    float: left;
+    position: relative;
+}
+.key.black--key::after{
+    content:"";
+    width: 2em;
+    height: 6.25em;
+    background-color: #1d1e22;
+    border-radius:0 0 0.1875em 0.1875em;
+    position: absolute;
+    top: 0;
+    left: -1.125em;  
+}
+
+@media (max-width: 768px){
+    #piano{
+        width: 22.37em;
+    }
+    #keys{
+        width: 19.9em;
+    }
+    .logo{
+        width: 9.375em;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 769px){
+    #piano{
+        width: 42.1875em;   
+    }
+    #keys{
+        width: 39.5625em;
+    }
+}
